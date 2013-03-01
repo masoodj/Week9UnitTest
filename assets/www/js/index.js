@@ -43,7 +43,9 @@ var app = {
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
-
+        //copy here
+        document.getElementById("platform").innerHTML = device.platform;
+        document.getElementById("version").innerHTML = device.version;
         console.log('Received Event: ' + id);
     }
 };
